@@ -1,25 +1,26 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "dev.reiva",
+		"id": "baggargers",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Baggargers",
+			"description": "Add a versatile backpack.",
+			"license": "Apache-2.0",
 			"contributors": {
-				"Me!": "Owner"
+				"ReiRokusanami": "Owner"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
-			},
-			"icon": "assets/example_mod/icon.png"
+				"homepage": "https://reiva.dev/",
+				"issues": "https://github.com/ReiRokusanami0010/Baggargers/issues",
+				"sources": "https://github.com/ReiRokusanami0010/Baggargers"
+			}
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "dev.reiva.baggargers.Baggargers",
+			"client_init": "dev.reiva.baggargers.BaggargersClient"
 		},
 		"depends": [
 			{
@@ -35,6 +36,5 @@
 				"versions": ">=1.18.2"
 			}
 		]
-	},
-	"mixin": "example_mod.mixins.json"
+	}
 }
